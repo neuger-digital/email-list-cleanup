@@ -11,8 +11,8 @@ Here are all the rules listed below combined: `@.*@|[,;\(\)\[\]]| +|@.*?[^\.0-9a
 
 In Excel, copy the email address column into a text editor, change them to lowercase and run the following regular expressions to identify potential invalid email addresses.
 
-| Regular Expression         |                                               Looks for                                               |
-|----------------------------|:-----------------------------------------------------------------------------------------------------:|
+| Regular Expression         | Looks for                                                                                             |
+|----------------------------|-------------------------------------------------------------------------------------------------------|
 | @.*@                       | Searches for two "@" signs.                                                                           |
 | [,;\(\)\[\]]               | Searches ,;()[] – invalid characters. These also might signify two email addresses in the same field. |
 | \s+                        | Searches for spaces.                                                                                  |
