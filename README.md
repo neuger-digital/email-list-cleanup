@@ -8,7 +8,7 @@ http://wiki.neuger.com/wiki/HTML_Emails
 Open the CSV file in a text editor (preferably with the email address column as the first column) to test for two or more email addresses on the same line. If there are more than two on the same line, duplicate the current row for each email address on that line and make sure the information is the same (be careful of quotes).
 
 Here are all the rules listed below combined:
-`@.*@|[,;\(\)\[\]]| +|@.*?[^\.0-9a-z\r\-\n$].*?$|@[^\.]*$|\.\.|\.$|\.co?$|\.ne?$|\.or?$|\.ed?$|\.go?$`
+```@.*@|[,;\(\)\[\]]| +|@.*?[^\.0-9a-z\r\-\n$].*?$|@[^\.]*$|\.\.|\.$|\.co?$|\.ne?$|\.or?$|\.ed?$|\.go?$```
 
 In Excel, copy the email address column into a text editor, change them to lowercase and run the following regular expressions to identify potential invalid email addresses.
 
