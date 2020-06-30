@@ -14,7 +14,7 @@ In Excel, copy the email address column into a text editor, change them to lower
 
 | Regular Expression         | Looks for                                                                                                     |
 |----------------------------|---------------------------------------------------------------------------------------------------------------|
-| @.*@                       | Searches for two `@` signs.                                                                                   |
+| @.*@                       | Searches for two `@@` signs.                                                                                   |
 | [,;\(\)\[\]]               | Searches `,;()[]` – invalid characters. These also might signify two email addresses in the same field.       |
 | \s+                        | Searches for spaces.                                                                                          |
 | @.*?[^\.0-9a-z\r\-\n$].*?$ | Searches invalid characters after `@` sign.                                                                   |
