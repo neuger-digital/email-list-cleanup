@@ -12,14 +12,14 @@ Here are all the rules listed below combined:
 
 In Excel, copy the email address column into a text editor, change them to lowercase and run the following regular expressions to identify potential invalid email addresses.
 
-| Regular Expression         | Looks for                                                                                             |
-|----------------------------|-------------------------------------------------------------------------------------------------------|
-| @.*@                       | Searches for two "@" signs.                                                                           |
-| [,;\(\)\[\]]               | Searches ,;()[] – invalid characters. These also might signify two email addresses in the same field. |
-| \s+                        | Searches for spaces.                                                                                  |
-| @.*?[^\.0-9a-z\r\-\n$].*?$ | Searches invalid characters after "@" sign.                                                           |
-| @[^\.]*$                   | Searches for "." after "@".                                                                           |
-| \.\.                       | Searches for two periods in a row.                                                                    |
-| \.$                        | Searches for a "." at the end of the line.                                                            |
-| \.co$                      | Searches for an email address ending in .co (also .ne, .or, .ed)                                      |
-| \.c$                       | Searches for an email address ending in .c (also .n, .o, .e)                                          |
+| Regular Expression         | Looks for                                                                                                     |
+|----------------------------|---------------------------------------------------------------------------------------------------------------|
+| @.*@                       | Searches for two `@` signs.                                                                                   |
+| [,;\(\)\[\]]               | Searches `,;()[]` – invalid characters. These also might signify two email addresses in the same field.       |
+| \s+                        | Searches for spaces.                                                                                          |
+| @.*?[^\.0-9a-z\r\-\n$].*?$ | Searches invalid characters after `@` sign.                                                                   |
+| @[^\.]*$                   | Searches for `.` after `@`.                                                                                   |
+| \.\.                       | Searches for two periods `..` in a row.                                                                       |
+| \.$                        | Searches for a `.` at the end of the line.                                                                    |
+| \.co$                      | Searches for an email address ending in `.co` (also `.ne`, `.or`, `.ed`)                                      |
+| \.c$                       | Searches for an email address ending in `.c` (also `.n`, `.o`, `.e`)                                          |
