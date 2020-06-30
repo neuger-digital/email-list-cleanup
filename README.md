@@ -5,7 +5,7 @@ For those at Neuger, here is the private documentation:
 http://wiki.neuger.com/wiki/HTML_Emails
 
 ## Cleaning Email Addresses
-Copy the email column into a text editor, convert the emails to lowercase `⌘K, ⌘L` and search for the following regular expression to identify potential invalid emails.
+Copy the email column into a text editor, convert the emails to lowercase `⌘K, ⌘L` and search for the following regular expressions to identify potential invalid emails.
 
 | Regular Expression         | Looks for                                                                                                     |
 |----------------------------|---------------------------------------------------------------------------------------------------------------|
