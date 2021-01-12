@@ -10,17 +10,17 @@ Copy the email column into a text editor, convert the emails to lowercase `⌘K,
 | Regular Expression         | Looks for                                                                                                     |
 |----------------------------|---------------------------------------------------------------------------------------------------------------|
 | @.*@                       | Searches for two `@@` signs.                                                                                   |
-| [,;\(\)\[\]]               | Searches `,;()[]` – invalid characters. These also might signify two email addresses in the same field.       |
+| [,;/\(/\)/\[/\]]               | Searches `,;()[]` – invalid characters. These also might signify two email addresses in the same field.       |
 | \s+                        | Searches for spaces.                                                                                          |
-| @.*?[^\.0-9a-z\r\-\n$].*?$ | Searches invalid characters after `@` sign.                                                                   |
-| @[^\.]*$                   | Searches for `.` after `@`.                                                                                   |
-| \.\.                       | Searches for two periods `..` in a row.                                                                       |
-| \.$                        | Searches for a `.` at the end of the line.                                                                    |
-| \.co$                      | Searches for an email address ending in `.co` (also `.ne`, `.or`, `.ed`)                                      |
-| \.c$                       | Searches for an email address ending in `.c` (also `.n`, `.o`, `.e`)                                          |
+| @.*?[^/\.0-9a-z/\r/\-/\n$].*?$ | Searches invalid characters after `@` sign.                                                                   |
+| @[^/\.]*$                   | Searches for `.` after `@`.                                                                                   |
+| /\./\.                       | Searches for two periods `..` in a row.                                                                       |
+| /\.$                        | Searches for a `.` at the end of the line.                                                                    |
+| /\.co$                      | Searches for an email address ending in `.co` (also `.ne`, `.or`, `.ed`)                                      |
+| /\.c$                       | Searches for an email address ending in `.c` (also `.n`, `.o`, `.e`)                                          |
 
 To make things easier, all of these can be combined into a singular regular expression to search for common email list issues.
 
 | Combined Regular Expression                                                                                     |
 |-----------------------------------------------------------------------------------------------------------------|
-| @.*@\|[,;\(\)\[\]]\| +\|@.*?[^\.0-9a-z\r\-\n$].*?$\|@[^\.]*$\|\.\.\|\.$\|\.co?$\|\.ne?$\|\.or?$\|\.ed?$\|\.go?$ |
+| @.\*@|[,;\(\)\[\]]| +|@.*?[^\.0-9a-z\r\-\n$].*?$\|@[^\.]*$|\.\.|\.$|\.co?$|\.ne?$|\.or?$|\.ed?$|\.go?$ |
