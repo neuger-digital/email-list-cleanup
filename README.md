@@ -10,7 +10,7 @@ Copy the email column into a text editor, convert the emails to lowercase `⌘K,
 | Regular Expression         | Looks for                                                                                                     |
 |----------------------------|---------------------------------------------------------------------------------------------------------------|
 | @.*@                       | Searches for two `@@` signs.                                                                                   |
-| [,;\/(\/)\/[\/]]               | Searches `,;()[]` – invalid characters. These also might signify two email addresses in the same field.       |
+| [,;\\(\\)\\[\\]]               | Searches `,;()[]` – invalid characters. These also might signify two email addresses in the same field.       |
 | \s+                        | Searches for spaces.                                                                                          |
 | @.*?[^/\.0-9a-z/\r/\-/\n$].*?$ | Searches invalid characters after `@` sign.                                                                   |
 | @[^/\.]*$                   | Searches for `.` after `@`.                                                                                   |
